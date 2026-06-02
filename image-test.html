@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Test - HaanCorp</title>
+  <style>
+    body {
+      background: #0c0e12;
+      color: #f5f5f5;
+      font-family: system-ui, -apple-system, sans-serif;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 { color: #b8a790; margin-bottom: 30px; }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .image-card {
+      border: 1px solid rgba(184, 167, 144, 0.3);
+      border-radius: 8px;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(10px);
+    }
+    .image-card h3 { color: #b8a790; margin-top: 0; }
+    .image-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin: 10px 0;
+    }
+    .image-card p { margin: 5px 0; font-size: 14px; color: #aaa; }
+  </style>
+</head>
+<body>
+  <h1>🖼️ Image Loading Test</h1>
+  
+  <div class="image-grid">
+    <div class="image-card">
+      <h3>Hero Image</h3>
+      <img src="public/hero.png" alt="Hero">
+      <p>Path: public/hero.png</p>
+      <p>Used in: Hero section, Contact section</p>
+    </div>
+
+    <div class="image-card">
+      <h3>Construction Service</h3>
+      <img src="public/services-construction.png" alt="Construction">
+      <p>Path: public/services-construction.png</p>
+      <p>Used in: Services card, About section</p>
+    </div>
+
+    <div class="image-card">
+      <h3>Freight Service</h3>
+      <img src="public/services-freight.png" alt="Freight">
+      <p>Path: public/services-freight.png</p>
+      <p>Used in: Services section background, Footer</p>
+    </div>
+
+    <div class="image-card">
+      <h3>Transport Service</h3>
+      <img src="public/services-transport.png" alt="Transport">
+      <p>Path: public/services-transport.png</p>
+      <p>Used in: Services card, CTA section</p>
+    </div>
+  </div>
+
+  <div style="margin-top: 40px; padding: 20px; background: rgba(184, 167, 144, 0.1); border-left: 4px solid #b8a790; border-radius: 4px;">
+    <h2 style="color: #b8a790; margin-top: 0;">✓ All images have been restored!</h2>
+    <p>All image paths in index.html have been updated to use the local <code>public/</code> directory.</p>
+    <p>The following sections now display images:</p>
+    <ul>
+      <li><strong>Hero Section:</strong> Background image (hero.png) at 5% opacity</li>
+      <li><strong>Ecosystem Section:</strong> HaanCorp Group diagram (external URL maintained)</li>
+      <li><strong>Services Section:</strong> Background image + 3 service card images</li>
+      <li><strong>About/Why Choose Section:</strong> Construction background image at 3% opacity</li>
+      <li><strong>CTA Section:</strong> Transport background image at 3% opacity</li>
+      <li><strong>Contact Section:</strong> Hero background image at 3% opacity</li>
+      <li><strong>Footer:</strong> Freight background image at 2% opacity</li>
+    </ul>
+    <p><a href="/" style="color: #b8a790; text-decoration: none; font-weight: bold;">← Back to main site</a></p>
+  </div>
+</body>
+</html>

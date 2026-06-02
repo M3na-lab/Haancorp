@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HaanCorp International - Global Logistics Solutions">
+  <meta name="theme-color" content="#0c0e12">
+  <title>HaanCorp International - Global Logistics Solutions</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23b8a790'>H</text></svg>">
+</head>
+<body class="font-sans antialiased bg-background text-foreground">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center gap-2.5 flex-shrink-0">
+        <img 
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-XumXAx0rIy2EzcAbqOhOP7S5RyKZzA.png"
+          alt="HaanCorp Logo"
+          class="h-11 w-auto transition-transform hover:scale-105 duration-300"
+          width="50"
+          height="50"
+        >
+        <span class="font-bold text-lg hidden sm:inline text-foreground transition-colors duration-300">HaanCorp</span>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#" class="text-foreground/80 hover:text-accent text-sm transition-colors duration-300 ease-out">Home</a>
+        <a href="#services" class="text-foreground/80 hover:text-accent text-sm transition-colors duration-300 ease-out">Services</a>
+        <a href="#about" class="text-foreground/80 hover:text-accent text-sm transition-colors duration-300 ease-out">About</a>
+        <a href="#contact" class="text-foreground/80 hover:text-accent text-sm transition-colors duration-300 ease-out">Contact</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-foreground p-2 transition-colors duration-300" id="mobile-menu-btn" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden glass border-t border-white/20 hidden" id="mobile-menu">
+      <div class="px-4 py-4 flex flex-col gap-4">
+        <a href="#" class="text-foreground/80 hover:text-accent text-sm transition-colors duration-300 ease-out">Home</a>
+        <a href="#services" class="text-foreground/80 hover:text-accent text-sm transition-colors duration-300 ease-out">Services</a>
+        <a href="#about" class="text-foreground/80 hover:text-accent text-sm transition-colors duration-300 ease-out">About</a>
+        <a href="#contact" class="text-foreground/80 hover:text-accent text-sm transition-colors duration-300 ease-out">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-32 pb-20 overflow-hidden section-pattern">
+    <div class="absolute inset-0 -z-10">
+      <img src="public/hero.png" alt="Global logistics" class="w-full h-full object-cover opacity-5">
+      <div class="absolute inset-0 bg-gradient-to-br from-background via-background to-background"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-2 glass rounded-full mb-6">
+            <div class="w-2 h-2 rounded-full bg-accent"></div>
+            <span class="text-foreground/90 text-xs font-medium">Global Leadership</span>
+          </div>
+          <h1 class="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance leading-tight text-foreground">
+            Excellence in <span class="text-accent">Global Logistics</span>
+          </h1>
+          <p class="text-lg text-foreground/70 mb-8 leading-relaxed max-w-lg">
+            Delivering world-class solutions across construction, freight, machinery, and transportation. Trusted by 250+ projects in 45 countries.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <button class="glass-button text-accent-foreground text-base h-12 px-6 rounded-lg font-medium inline-flex items-center justify-center">
+              Explore Services
+              <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+              </svg>
+            </button>
+            <button class="glass-button text-foreground text-base h-12 px-6 rounded-lg font-medium inline-flex items-center justify-center">
+              Learn More
+            </button>
+          </div>
+        </div>
+
+        <!-- Hero Stats -->
+        <div class="grid grid-cols-2 gap-4">
+          <div class="glass-card p-6 hover:bg-white/12 transition">
+            <div class="text-3xl md:text-4xl font-bold text-accent mb-2">250+</div>
+            <p class="text-foreground/70 text-sm">Projects Completed</p>
+          </div>
+          <div class="glass-card p-6 hover:bg-white/12 transition">
+            <div class="text-3xl md:text-4xl font-bold text-accent mb-2">45</div>
+            <p class="text-foreground/70 text-sm">Countries Served</p>
+          </div>
+          <div class="glass-card p-6 hover:bg-white/12 transition">
+            <div class="text-3xl md:text-4xl font-bold text-accent mb-2">99.2%</div>
+            <p class="text-foreground/70 text-sm">On-Time Delivery</p>
+          </div>
+          <div class="glass-card p-6 hover:bg-white/12 transition">
+            <div class="text-3xl md:text-4xl font-bold text-accent mb-2">1000+</div>
+            <p class="text-foreground/70 text-sm">Team Members</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ecosystem Section -->
+  <section class="py-20 relative">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-2 glass rounded-full mb-6">
+          <div class="w-2 h-2 rounded-full bg-accent"></div>
+          <span class="text-foreground/90 text-xs font-medium">Our Ecosystem</span>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-balance text-foreground">
+          HaanCorp Group of Companies
+        </h2>
+        <p class="text-lg text-foreground/70 max-w-2xl mx-auto">
+          A comprehensive suite of integrated services spanning logistics, real estate, financial management, and more
+        </p>
+      </div>
+
+      <div class="glass-card p-8 md:p-12 border-white/20 flex items-center justify-center">
+        <img 
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-28%20at%2010.50.22-YewJOOHMq4aCsG8SsyQh0JW900eqCc.jpeg"
+          alt="HaanCorp Ecosystem - Group of Companies"
+          class="w-full h-auto max-w-2xl"
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 relative section-pattern">
+    <div class="absolute inset-0 -z-10">
+      <img src="public/services-freight.png" alt="Logistics background" class="w-full h-full object-cover opacity-3">
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-2 glass rounded-full mb-6">
+          <div class="w-2 h-2 rounded-full bg-accent"></div>
+          <span class="text-foreground/90 text-xs font-medium">Our Services</span>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-balance">
+          Comprehensive Solutions for Every Need
+        </h2>
+        <p class="text-lg text-foreground/70 max-w-2xl mx-auto">
+          From construction to logistics, we provide integrated services that scale with your business
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="group relative">
+          <div class="glass-card overflow-hidden h-full flex flex-col hover:bg-white/12 transition duration-300">
+            <div class="relative h-48 overflow-hidden">
+              <img src="public/services-construction.png" alt="Construction" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-amber-800 to-yellow-700 opacity-30 group-hover:opacity-50 transition"></div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="w-10 h-10 rounded-lg bg-white/15 flex items-center justify-center mb-4 group-hover:bg-white/25 transition">
+                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-foreground">Construction & Turnkey</h3>
+              <p class="text-foreground/70 text-sm mb-6 flex-grow">Complete project execution from planning to delivery</p>
+              <a href="#contact" class="inline-flex items-center text-accent hover:text-accent/80 transition font-medium text-sm">
+                Learn More
+                <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="glass-card overflow-hidden h-full flex flex-col hover:bg-white/12 transition duration-300">
+            <div class="relative h-48 overflow-hidden">
+              <img src="public/services-freight.png" alt="Freight" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-yellow-800 to-amber-700 opacity-30 group-hover:opacity-50 transition"></div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="w-10 h-10 rounded-lg bg-white/15 flex items-center justify-center mb-4 group-hover:bg-white/25 transition">
+                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-foreground">Freight & Logistics</h3>
+              <p class="text-foreground/70 text-sm mb-6 flex-grow">Global freight solutions with real-time tracking</p>
+              <a href="#contact" class="inline-flex items-center text-accent hover:text-accent/80 transition font-medium text-sm">
+                Learn More
+                <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="glass-card overflow-hidden h-full flex flex-col hover:bg-white/12 transition duration-300">
+            <div class="relative h-48 overflow-hidden">
+              <img src="public/services-transport.png" alt="Transportation" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-amber-700 to-yellow-800 opacity-30 group-hover:opacity-50 transition"></div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="w-10 h-10 rounded-lg bg-white/15 flex items-center justify-center mb-4 group-hover:bg-white/25 transition">
+                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-foreground">Transportation</h3>
+              <p class="text-foreground/70 text-sm mb-6 flex-grow">Reliable land transportation across regions</p>
+              <a href="#contact" class="inline-flex items-center text-accent hover:text-accent/80 transition font-medium text-sm">
+                Learn More
+                <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Services Grid -->
+      <div class="grid md:grid-cols-4 gap-4 mt-12">
+        <div class="glass-card p-6 text-center hover:bg-white/12 transition">
+          <svg class="w-8 h-8 text-accent mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4m0 0L4 7m16 0v10l-8 4m0 0l-8-4m0 0V7"></path>
+          </svg>
+          <p class="text-foreground/90 font-medium text-sm">Machinery Supplies</p>
+        </div>
+        <div class="glass-card p-6 text-center hover:bg-white/12 transition">
+          <svg class="w-8 h-8 text-accent mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20H7m6-4h.01M9 9h.01"></path>
+          </svg>
+          <p class="text-foreground/90 font-medium text-sm">Interior Designs</p>
+        </div>
+        <div class="glass-card p-6 text-center hover:bg-white/12 transition">
+          <svg class="w-8 h-8 text-accent mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <p class="text-foreground/90 font-medium text-sm">Project Logistics</p>
+        </div>
+        <div class="glass-card p-6 text-center hover:bg-white/12 transition">
+          <svg class="w-8 h-8 text-accent mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.856-1.487M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 0a2 2 0 11-4 0 2 2 0 014 0zM5 20a3 3 0 015.856-1.487M5 10a2 2 0 110-4 2 2 0 010 4z"></path>
+          </svg>
+          <p class="text-foreground/90 font-medium text-sm">Dedicated Support</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section id="about" class="py-20 relative overflow-hidden section-pattern">
+    <div class="absolute inset-0 -z-10">
+      <img src="public/services-construction.png" alt="Construction background" class="w-full h-full object-cover opacity-3">
+    </div>
+    <div class="absolute top-1/2 left-0 w-96 h-96 bg-accent/3 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-balance text-foreground">Why Choose HaanCorp</h2>
+        <p class="text-lg text-foreground/70 max-w-2xl mx-auto">
+          We combine expertise, reliability, and innovation to deliver exceptional results
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="glass-card p-6 hover:bg-white/12 transition">
+          <div class="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center mb-4">
+            <span class="text-accent font-bold text-base">1</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2 text-foreground">Industry Expert</h3>
+          <p class="text-foreground/70 text-sm leading-relaxed">Decades of experience in logistics, construction, and supply chain management across global markets</p>
+        </div>
+
+        <div class="glass-card p-6 hover:bg-white/12 transition">
+          <div class="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center mb-4">
+            <span class="text-accent font-bold text-base">2</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2 text-foreground">Quality Assured</h3>
+          <p class="text-foreground/70 text-sm leading-relaxed">ISO-certified processes and rigorous quality standards ensure excellence in every project</p>
+        </div>
+
+        <div class="glass-card p-6 hover:bg-white/12 transition">
+          <div class="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center mb-4">
+            <span class="text-accent font-bold text-base">3</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2 text-foreground">24/7 Support</h3>
+          <p class="text-foreground/70 text-sm leading-relaxed">Dedicated team available round-the-clock to support your operations and resolve issues</p>
+        </div>
+
+        <div class="glass-card p-6 hover:bg-white/12 transition">
+          <div class="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center mb-4">
+            <span class="text-accent font-bold text-base">4</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2 text-foreground">Real-Time Tracking</h3>
+          <p class="text-foreground/70 text-sm leading-relaxed">Advanced technology platforms provide complete visibility and control over your shipments</p>
+        </div>
+
+        <div class="glass-card p-6 hover:bg-white/12 transition">
+          <div class="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center mb-4">
+            <span class="text-accent font-bold text-base">5</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2 text-foreground">Sustainable Practices</h3>
+          <p class="text-foreground/70 text-sm leading-relaxed">Committed to eco-friendly logistics solutions and responsible supply chain management</p>
+        </div>
+
+        <div class="glass-card p-6 hover:bg-white/12 transition">
+          <div class="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center mb-4">
+            <span class="text-accent font-bold text-base">6</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2 text-foreground">Global Reach</h3>
+          <p class="text-foreground/70 text-sm leading-relaxed">Operations spanning 45 countries with local expertise and international standards</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 relative overflow-hidden section-pattern">
+    <div class="absolute inset-0 -z-10">
+      <img src="public/services-transport.png" alt="Transportation background" class="w-full h-full object-cover opacity-3">
+    </div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="glass-card p-12 border-white/15">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-balance text-foreground">
+          Ready to Transform Your Logistics?
+        </h2>
+        <p class="text-lg text-foreground/70 mb-10 max-w-2xl mx-auto">
+          Connect with our team to discover how HaanCorp can optimize your supply chain and delivery operations.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <button class="glass-button text-accent-foreground text-base h-12 px-6 rounded-lg font-medium">
+            Schedule Consultation
+          </button>
+          <button class="glass-button text-foreground text-base h-12 px-6 rounded-lg font-medium">
+            Download Brochure
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 section-pattern">
+    <div class="absolute inset-0 -z-10">
+      <img src="public/hero.png" alt="Logistics background" class="w-full h-full object-cover opacity-3">
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid md:grid-cols-2 gap-12 items-start">
+        <div>
+          <h2 class="text-4xl font-bold mb-6 text-foreground">Get in Touch</h2>
+          <p class="text-foreground/70 mb-8 leading-relaxed">
+            Have questions? Our team is ready to help. Reach out through any of these channels.
+          </p>
+
+          <div class="space-y-5">
+            <div class="flex gap-4">
+              <div class="w-12 h-12 rounded-lg glass flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20H7m6-4h.01M9 9h.01"></path>
+                </svg>
+              </div>
+              <div>
+                <p class="font-semibold text-sm mb-1 text-foreground">Global Headquarters</p>
+                <p class="text-foreground/70 text-sm">Available in 45+ countries worldwide</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="w-12 h-12 rounded-lg glass flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.856-1.487M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 0a2 2 0 11-4 0 2 2 0 014 0zM5 20a3 3 0 015.856-1.487M5 10a2 2 0 110-4 2 2 0 010 4z"></path>
+                </svg>
+              </div>
+              <div>
+                <p class="font-semibold text-sm mb-1 text-foreground">Email Us</p>
+                <p class="text-foreground/70 text-sm">contact@haancorp.com</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="w-12 h-12 rounded-lg glass flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <div>
+                <p class="font-semibold text-sm mb-1 text-foreground">Response Time</p>
+                <p class="text-foreground/70 text-sm">24 hours or less</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card p-8 border-white/15">
+          <form class="space-y-5" id="contact-form">
+            <div>
+              <label class="block text-sm font-medium mb-2 text-foreground">Name</label>
+              <input type="text" placeholder="Your name" class="w-full px-4 py-3 glass rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/30 transition placeholder-foreground/40">
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-2 text-foreground">Email</label>
+              <input type="email" placeholder="your@email.com" class="w-full px-4 py-3 glass rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/30 transition placeholder-foreground/40">
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-2 text-foreground">Service Interest</label>
+              <select class="w-full px-4 py-3 glass rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/30 transition text-foreground">
+                <option class="bg-slate-950">Select a service</option>
+                <option class="bg-slate-950">Construction & Turnkey</option>
+                <option class="bg-slate-950">Freight & Logistics</option>
+                <option class="bg-slate-950">Transportation</option>
+                <option class="bg-slate-950">Other</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-2 text-foreground">Message</label>
+              <textarea placeholder="Tell us about your needs..." rows="4" class="w-full px-4 py-3 glass rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/30 transition resize-none placeholder-foreground/40"></textarea>
+            </div>
+            <button type="submit" class="w-full glass-button text-accent-foreground h-11 rounded-lg font-medium">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 glass py-12 section-pattern">
+    <div class="absolute inset-0 -z-10">
+      <img src="public/services-freight.png" alt="Background" class="w-full h-full object-cover opacity-2">
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        <div>
+          <div class="flex items-center gap-2.5 mb-4">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-XumXAx0rIy2EzcAbqOhOP7S5RyKZzA.png" alt="HaanCorp Logo" class="h-10 w-auto transition-transform hover:scale-105 duration-300" width="50" height="50">
+            <span class="font-bold text-base text-foreground">HaanCorp</span>
+          </div>
+          <p class="text-foreground/60 text-sm">Global logistics excellence</p>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-sm mb-4 text-foreground">Services</h4>
+          <ul class="space-y-2 text-sm text-foreground/60">
+            <li><a href="#" class="hover:text-accent transition">Construction</a></li>
+            <li><a href="#" class="hover:text-accent transition">Freight</a></li>
+            <li><a href="#" class="hover:text-accent transition">Transportation</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-sm mb-4 text-foreground">Company</h4>
+          <ul class="space-y-2 text-sm text-foreground/60">
+            <li><a href="#" class="hover:text-accent transition">About</a></li>
+            <li><a href="#" class="hover:text-accent transition">Careers</a></li>
+            <li><a href="#" class="hover:text-accent transition">Blog</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-sm mb-4 text-foreground">Legal</h4>
+          <ul class="space-y-2 text-sm text-foreground/60">
+            <li><a href="#" class="hover:text-accent transition">Privacy</a></li>
+            <li><a href="#" class="hover:text-accent transition">Terms</a></li>
+            <li><a href="#" class="hover:text-accent transition">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center">
+        <p class="text-foreground/60 text-sm">© 2026 HaanCorp International. All rights reserved.</p>
+        <div class="flex gap-6 mt-4 sm:mt-0">
+          <a href="#" class="text-foreground/60 hover:text-accent transition text-sm">Twitter</a>
+          <a href="#" class="text-foreground/60 hover:text-accent transition text-sm">LinkedIn</a>
+          <a href="#" class="text-foreground/60 hover:text-accent transition text-sm">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
